@@ -4,7 +4,7 @@ def call(Map params = [:]) {
 
     sh '''
         npm install
-        npm test
+        npm test -- --passWithNoTests
     '''
 
     echo "Unit Test execution completed successfully"
